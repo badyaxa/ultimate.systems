@@ -9,10 +9,10 @@ public class StudentOrazNauczycielApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(StudentOrazNauczycielApplication.class, args);
-        openHomePage();
+        openSwaggerUiPage();
     }
 
-    private static void openHomePage() {
+    private static void openSwaggerUiPage() {
         Runtime rt = Runtime.getRuntime();
         try {
             rt.exec("rundll32 url.dll,FileProtocolHandler " + "http://localhost:8080/swagger-ui/#");

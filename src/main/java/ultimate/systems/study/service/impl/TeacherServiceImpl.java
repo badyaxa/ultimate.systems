@@ -48,7 +48,7 @@ public class TeacherServiceImpl implements TeacherService {
     }
 
     @Override
-    public List<Teacher> findAllByStudentId(Long studentId/*, PageRequest pageRequest*/) {
+    public List<Teacher> findAllByStudentId(Long studentId) {
         return teacherRepository.findTeachersByStudentsId(studentId);
     }
 

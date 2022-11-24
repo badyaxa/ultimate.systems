@@ -17,7 +17,7 @@ public interface TeacherService {
 
     Teacher findByFirstNameAndLastName(String firstName, String lastName);
 
-    List<Teacher> findAllByStudentId(Long studentId/*, PageRequest pageRequest*/);
+    List<Teacher> findAllByStudentId(Long studentId);
 
     Set<Student> addStudent(Long teacherId, Long studentId);
 
